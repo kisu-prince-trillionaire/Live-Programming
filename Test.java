@@ -3,13 +3,13 @@ package com.demo.string;
 public class Test {
 
 	public static void main(String[] args) {
-		String[] lines = { "geeksforgeeks", "geeks", "geek", "geezer" };
+		String[] lines = {"apple", "ape", "april"};
 
 		String result = "";
 		char temp;
-		for (int i = 0; i < lines.length; i++) {
+		for (int i = 0; i < lines.length-1; i++) {
 			temp = lines[0].charAt(i);
-			for (int j = 1; j < lines.length; j++) {
+			for (int j = 1; j < lines.length-1; j++) {
 				if (lines[j].charAt(i) != temp)
 					break;
 			}
